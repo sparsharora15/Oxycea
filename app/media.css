@@ -1,0 +1,13 @@
+@media (max-width: 1024px) {
+  .media-bg {
+    width: 100% !important;
+  }
+  .media-machine-bg {
+    margin: auto !important;
+  }
+}
+@media (min-width: 1024px) {
+  .about-list {
+    width: 100% !important;
+  }
+}

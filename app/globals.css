@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@200;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-k2d overflow-x-hidden;
+  }
+  nav ul li {
+    @apply text-black text-[1rem] lg:text-xs font-normal cursor-pointer;
+  }
+
+  .about-list .list-item {
+    @apply w-[9rem] lg:w-fit flex flex-col lg:flex-row items-center gap-[1.81rem];
+  }
+  .about-list img {
+    @apply w-fit;
+  }
+  .about-list p {
+    @apply lg:w-[280px] text-center lg:text-left text-white text-xl font-semibold leading-tight;
+  }
+
+  .models ul li {
+    @apply flex flex-col items-center gap-[1.06rem];
+  }
+  .models ul li img {
+    @apply w-[3.5rem] h-[3.5rem];
+  }
+  .models ul li p {
+    @apply text-zinc-700 text-xs font-bold text-center;
+  }
+
+  .services .services-list > div {
+    @apply flex flex-col items-center gap-[1.20rem];
+  }
+  .services .services-list img {
+    @apply w-[6.63769rem] h-[6.78094rem] lg:w-auto lg:h-auto text-center text-sky-700 text-[15px] font-normal;
+  }
+  .services .services-list p {
+    @apply text-center text-sky-700 text-[15px] font-normal;
+  }
+}

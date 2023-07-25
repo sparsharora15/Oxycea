@@ -1,0 +1,13 @@
+<svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="tv">
+<path id="Vector" d="M50.8333 17.7917H10.1667C7.35923 17.7917 5.08334 20.0676 5.08334 22.8751V50.8334C5.08334 53.6409 7.35923 55.9167 10.1667 55.9167H50.8333C53.6408 55.9167 55.9167 53.6409 55.9167 50.8334V22.8751C55.9167 20.0676 53.6408 17.7917 50.8333 17.7917Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M43.2083 5.08325L30.5 17.7916L17.7917 5.08325" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0.5" y="0.5" width="60" height="60" stroke="url(#paint0_linear_19_169)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_19_169" x1="30.5" y1="0" x2="30.5" y2="61" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

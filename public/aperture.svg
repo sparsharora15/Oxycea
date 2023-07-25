@@ -1,0 +1,18 @@
+<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="aperture">
+<path id="Vector" d="M27.5 50.4166C40.1565 50.4166 50.4167 40.1564 50.4167 27.4999C50.4167 14.8434 40.1565 4.58325 27.5 4.58325C14.8435 4.58325 4.58334 14.8434 4.58334 27.4999C4.58334 40.1564 14.8435 50.4166 27.5 50.4166Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M32.7938 18.3333L45.9479 41.1124" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M22.2062 18.3333H48.5146" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M16.9125 27.5001L30.0667 4.72095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M22.2063 36.6666L9.05209 13.8875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M32.7937 36.6667H6.48541" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M38.0875 27.5L24.9333 50.2792" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0.5" y="0.5" width="54" height="54" stroke="url(#paint0_linear_19_177)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_19_177" x1="27.5" y1="0" x2="27.5" y2="55" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
