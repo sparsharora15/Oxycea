@@ -28,3 +28,9 @@ export const getCertificationsData = () => {
 export const getProductssData = () => {
   return axios.get(`${BASE_URL}/product1s?populate=*`);
 };
+export const getProductssDataById = (id) => {
+  return axios.get(`${BASE_URL}/product1s/${id}?populate=*`);
+};
+export const sendmail = (data) => {
+  return axios.post(`http://localhost:5000/sendmail`,data);
+};

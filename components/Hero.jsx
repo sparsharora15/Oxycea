@@ -3,25 +3,26 @@ import Navbar from "./Navbar";
 import Image from "next/image";
 import heroBg1 from "@/public/heroBg1.png";
 import heroBg2 from "@/public/heroBg2.png";
+import Link from "next/link";
 import { SERVER_IP } from "@/Config/SERVER_IP";
-import '@/app/media.css'
-const Hero = ({ open, setOpen, heroData }) => {
+import "@/app/media.css";
+const Hero = ({ open, setOpen, heroData, productsData }) => {
+  // console.log()
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
-  const images = [
-    `${SERVER_IP}${heroData?.attributes?.heroRightImage1?.data?.attributes?.url}`,
-    `${SERVER_IP}${heroData?.attributes?.heroRightImage1?.data?.attributes?.url}`,
-    `${SERVER_IP}${heroData?.attributes?.heroRightImage1?.data?.attributes?.url}`,
-  ];
+
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentImageIndex(
+        (prevIndex) =>
+          (prevIndex + 1) % productsData?.attributes.Gallery.data.length
+      );
     }, 3000); // Change the interval time as per your requirement (e.g., 3000ms for 3 seconds).
 
     return () => {
       clearInterval(interval);
     };
-  }, [images]);
+  }, [productsData?.attributes?.Gallery?.data]);
   return (
     <div id="hero" className="relative">
       {/* Backgroud images */}
@@ -37,8 +38,8 @@ const Hero = ({ open, setOpen, heroData }) => {
       />
 
       <Navbar open={open} setOpen={setOpen} />
-      <div className="mt-[3.56rem] vsm:mt-[3rem] 2xl:mt-[5.81rem] flex flex-col lg:flex-row items-center justify-center 2xl:gap-[30px]">
-        <div className="px-[2rem] md:px-0 lg:mr-[-270px] 2xl:mr-[-300px] lg:ml-[60px] z-[2] ">
+      <div className="flex flex-col lg:flex-row items-center justify-center 2xl:gap-[30px]">
+        <div className="px-[2rem] md:px-0  lg:ml-[60px] z-[2] ">
           <h1 className="text-black text-3xl text-center md:text-start font-normal">
             {heroData?.attributes?.heroHeading1}
           </h1>
@@ -48,16 +49,23 @@ const Hero = ({ open, setOpen, heroData }) => {
           <p className="w-fit md:w-[464px] text-black text-[15px] font-normal text-justify">
             {heroData?.attributes?.discription}
           </p>
-          <button className="mt-[1.87rem] w-[123px] h-10 rounded-[10px] border border-cyan-600 text-sky-700 text-[15px] font-normal">
-            Read More
-          </button>
+          <Link href={`/ViewProduct/${productsData?.id}`}>
+            <button className="mt-[1.87rem] w-[123px] h-10 rounded-[10px] border border-cyan-600 text-sky-700 text-[15px] font-normal">
+              Read More
+            </button>
+          </Link>
         </div>
 
         <div className=" 2xl:mr-[-160px]">
           <img
-            src={images[currentImageIndex]}
+            src={`${SERVER_IP}${productsData?.attributes.Gallery.data[0]?.attributes?.url}`}
             alt={`Image ${currentImageIndex}`}
           />
+          {/* <img
+            src={`${SERVER_IP}${productsData?.attributes.Gallery.data[currentImageIndex]?.attributes?.url}`}
+            // productsData?.attributes.Gallery.data[0]?.attributes?.url
+            alt={`Image ${currentImageIndex}`}
+          /> */}
         </div>
       </div>
     </div>

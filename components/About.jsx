@@ -18,6 +18,7 @@ import '@/app/media.css'
 
 
 const About = ({ aboutData, productsData }) => {
+  console.log(productsData)
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   const images = [
@@ -148,7 +149,7 @@ const About = ({ aboutData, productsData }) => {
 
         <div className="mt-[50px] lg:mt-auto w-full flex justify-center gap-[1.44rem] items-center">
           <button className="w-[123px] h-10 rounded-[10px] border border-white bg-white flex justify-center items-center gap-[1rem] text-sky-700 text-[15px]">
-            <Image src={downloadIcon} alt="download Icon" /> Brochure
+            <Image src={downloadIcon} alt="download Icon" /> {aboutData?.attributes?.btnText}
           </button>
           <button className="w-[123px] h-10 rounded-[10px] border border-white flex justify-center items-center text-white text-[15px]">
             Learn More

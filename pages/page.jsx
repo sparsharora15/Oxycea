@@ -30,7 +30,9 @@ export default function Home() {
   const [servicesData, setServicesData] = useState();
   const [certificationData, setCertificationData] = useState();
   const [productsData, setProductsData] = useState();
-
+  function handleProductId(id) {
+    console.log(id);
+  }
   useEffect(() => {
     hero(setHeroData);
     about(setAboutData);
@@ -57,7 +59,13 @@ export default function Home() {
         </div>
       ) : (
         <div className={`${open && "h-screen overflow-y-hidden"}`}>
-          <Hero open={open} setOpen={setOpen} heroData={heroData} />
+          <Hero
+            open={open}
+            setOpen={setOpen}
+            heroData={heroData}
+            handleProductId={handleProductId}
+            productsData={productsData}
+          />
           <About aboutData={aboutData} />
           <Models
             modelsData={modelsData}

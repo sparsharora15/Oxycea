@@ -1,13 +1,6 @@
 import Image from "next/image";
-import modelImg from "@/public/modelImg.png";
 import boxShadow from "@/public/boxShadow.png";
 import modelBg from "@/public/modelsBg.png";
-import img1 from "@/public/aperture.svg";
-import img2 from "@/public/tv.svg";
-import img3 from "@/public/command.svg";
-import img4 from "@/public/phone-call.svg";
-import img5 from "@/public/lock.svg";
-import img6 from "@/public/check-circle.svg";
 import downloadIcon from "@/public/download.svg";
 import { SERVER_IP } from "@/Config/SERVER_IP";
 const Model = ({ reverse, modelsChamberData }) => {

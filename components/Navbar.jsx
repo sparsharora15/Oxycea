@@ -3,7 +3,7 @@ import logo from "../public/Logo.png";
 import downloadIcon from "@/public/download.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import { Link } from "react-scroll";
+import  Link from "next/link";
 
 const Navbar = ({ open, setOpen }) => {
   return (
@@ -16,50 +16,32 @@ const Navbar = ({ open, setOpen }) => {
       >
         <ul className="flex flex-col lg:flex-row items-center gap-[2.43rem]">
           <Link
-            onClick={() => setOpen(false)}
-            to="hero"
-            duration={500}
-            smooth={true}
+            href='/'
           >
             <li>HOME</li>
           </Link>
           <Link
-            onClick={() => setOpen(false)}
-            to="about"
-            duration={500}
-            smooth={true}
+            href='/About'
           >
             <li>ABOUT</li>
           </Link>
           <Link
-            onClick={() => setOpen(false)}
-            to="models"
-            duration={500}
-            smooth={true}
+             href='/Models'
           >
             <li>MODELS</li>
           </Link>
           <Link
-            onClick={() => setOpen(false)}
-            to="certification"
-            duration={500}
-            smooth={true}
+            href='/Certification'
           >
             <li>CERTIFICATION</li>
           </Link>
           <Link
-            onClick={() => setOpen(false)}
-            to="#"
-            duration={500}
-            smooth={true}
+            href='/Gallery'
           >
             <li>GALLERY</li>
           </Link>
           <Link
-            onClick={() => setOpen(false)}
-            to="#"
-            duration={500}
-            smooth={true}
+             href='/Contact'
           >
             <li>CONTACT</li>
           </Link>

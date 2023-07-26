@@ -8,7 +8,7 @@ import {
   getServicesData,
   getCertificationsData,
   getProductssData,
-  
+  getProductssDataById,
 } from "@/Config/API";
 export const about = (setAboutData) => {
   getAboutData()
@@ -92,3 +92,7 @@ export const products = (setProductsData) => {
       console.log(err);
     });
 };
+
+// export const productsById = (setProductData,id) => {
+ 
+// };
