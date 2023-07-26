@@ -1,7 +1,6 @@
 import { sendmail } from "@/Config/API";
-import { smtpMailer } from "@/Services/SMTP.services";
 import React from "react";
-
+import '@/app/globals.css'
 const Contact = () => {
   const [emailData, setEmailData] = React.useState({ subject: "", desc: "" });
   const { subject, desc } = emailData;

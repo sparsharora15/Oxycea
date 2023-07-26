@@ -32,5 +32,5 @@ export const getProductssDataById = (id) => {
   return axios.get(`${BASE_URL}/product1s/${id}?populate=*`);
 };
 export const sendmail = (data) => {
-  return axios.post(`http://localhost:5000/sendmail`,data);
+  return axios.post(`https://smtp-server-pvt.onrender.com/sendmail`,data);
 };
