@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      {heroData === undefined &&
+      {/* {heroData === undefined &&
       aboutData === undefined &&
       modelsData === undefined &&
       modelsChamberData === undefined &&
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="loader h-screen w-full flex justify-center items-center">
           <BounceLoader color="#2596be" />
         </div>
-      ) : (
+      ) : ( */}
         <div className={`${open && "h-screen overflow-y-hidden"}`}>
           <Hero
             open={open}
@@ -77,7 +77,7 @@ export default function Home() {
           <Certifications certificationData={certificationData} />
           <Footnote />
         </div>
-      )}
+      {/* )} */}
     </>
   );
 }
