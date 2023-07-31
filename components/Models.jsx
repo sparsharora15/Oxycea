@@ -59,6 +59,8 @@ const Models = () => {
       <div className="hidden lg:block">
         <Model reverse={true} />
         <Model reverse={false} />
+        <Model reverse={true} />
+        {/* <Model reverse={false} /> */}
       </div>
     </div>
   );
