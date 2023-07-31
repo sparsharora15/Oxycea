@@ -65,10 +65,10 @@
 
 
 import Image from "next/image";
-import img1 from "@/public/Group 41.png";
-import img2 from "@/public/Group 42.png";
-import img3 from "@/public/Group 43.png";
-import img4 from "@/public/Group 44.png";
+import img1 from "@/public/Group-41.png";
+import img2 from "@/public/Group-42.png";
+import img3 from "@/public/Group-43.png";
+import img4 from "@/public/Group-44.png";
 import servicesBg from "@/public/bgmob.svg";
 
 const Services = () => {

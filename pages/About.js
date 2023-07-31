@@ -2,18 +2,18 @@ import { hero, products } from "@/Services/page.services";
 import Hero from "@/components/Hero";
 import React from "react";
 import "@/app/globals.css";
-import aboutImg from "@/public/Rectangle 30.png";
+import aboutImg from "@/public/Rectangle-30.png";
 
 import download from "@/public/download.png";
 import Image from "next/image";
 import "./media.css";
 import Asme from "@/public/American_Society_of_Mechanical_Engineers_logo 1.png";
-import Settings from "@/public/Group 66.png";
-import Cost from "@/public/Group 66 (1).png";
+import Settings from "@/public/Group-66.png";
+import Cost from "@/public/Group66-(1).png";
 import Expert from "@/public/Vector.png";
 import Affiliated from "@/public/mdi_email-certified.png";
 import Services from "@/public/Clock.png";
-import siderImage from "@/public/Graphic (1).png";
+import siderImage from "@/public/Graphic-(1).png";
 
 // import  from "@/public/Rectangle 15.png";
 

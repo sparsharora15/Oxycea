@@ -2,7 +2,7 @@ import React from "react";
 import modelImg from "@/public/modelImg.png";
 import aperture from "@/public/aperture.png";
 import tv from "@/public/tv.png";
-import phone from "@/public/vector (1).png";
+import phone from "@/public/vector-(1).png";
 import play from "@/public/play.png";
 import downloadIcon from "@/public/di.png";
 import circle from "@/public/check-circle.png";
